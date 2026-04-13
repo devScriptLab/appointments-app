@@ -15,13 +15,13 @@ const AppointmentItem = props => {
     <li className="appointment-item">
       <div className="header-container">
         <p className="title">{title}</p>
-        <button type="button" className="star-button" data-testid="star">
-          <img
-            src={starImgUrl}
-            className="star"
-            alt="star"
-            onClick={onClickStar}
-          />
+        <button
+          type="button"
+          className="star-button"
+          data-testid="star"
+          onClick={onClickStar}
+        >
+          <img src={starImgUrl} className="star" alt="star" />
         </button>
       </div>
       <p className="date">Date: {date}</p>
